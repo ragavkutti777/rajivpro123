@@ -1,0 +1,38 @@
+<div id="introCarousel" class="carousel slide intro-carousel" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#introCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#introCarousel" data-slide-to="1"></li>
+    <li data-target="#introCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= image_tag 'carousel/carousel1.jpg', class: 'd-block mob-img1', alt: 'first plant' %>
+      <div class="carousel-content">
+        <h1 class="font-cap carousel-header wow fadeInDown">CREATE THE PERFECT GARDEN</h1>
+        <hr class="hr-green wow fadeInLeft">
+        <p class="carousel-p wow fadeInRight">Welcome to the top rated garden design bureau with a team of real experts in building exclusive modern green spaces.</p>
+        <button id="explore" class="explore font-cap">EXPLORE</button>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <%= image_tag 'carousel/carousel2.jpg', class: 'd-block mob-img2', alt: 'second plant' %>
+      <div class="carousel-content2">
+        <h3 class="carousel-header2">To <span>plant a garden,</span> is to<br>believe in tomorrow<span>.</span></h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'carousel/carousel3.jpg', class: 'd-block mob-img3', alt: 'third plant' %>
+      <div class="carousel-content3">
+        <h3 class="font-cap carousel-header3">Gardening is the art that uses plants as paint,and the soil and sky as canvas.</h3>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev carousel-nav" href="#introCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next carousel-nav" href="#introCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>

@@ -1,0 +1,64 @@
+
+$(window).scroll(function () {
+
+  if($(this).scrollTop() <= 100) {
+    $('.header').css("background-color", "rgb(255,255,255,0)");
+    $('.logo-light').css("content", "url(<%= asset_path('logo-white.png') %>)")
+  }
+
+  if($(this).scrollTop() > 200) {
+    $('.header').css("background-color", "rgb(0,0,0,0.6)");
+    // $('.logo-light').css("content", "url(<%= asset_path('logo-color.png') %>)")
+  }
+
+  if ($(this).scrollTop() > 500) {
+    $('.scroll-top').fadeIn();
+  } else {
+    $('.scroll-top').fadeOut();
+  }
+
+});
+
+$(document).on('turbolinks:load', function () {
+  $('.scroll-top').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 1500);
+    return false;
+  });
+
+  $('#explore').click(function(){
+    $('html, body').animate({
+        scrollTop: $("#services").offset().top
+    }, 1500);
+    return false;
+  });
+
+  $('#gal-carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#gal-slider'
+  });
+
+  $('#gal-slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#gal-carousel"
+  });
+
+  $(function () {
+    //scroll Animate Element
+    var wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: false,
+      live: true
+    })
+    wow.init();
+  });
+});

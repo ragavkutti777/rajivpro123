@@ -1,0 +1,59 @@
+<div class="contact text-center" id="contact">
+  <div class="container">
+    <h2 class="font-boomerang">Contact</h2>
+    <h6>Lets builds healthy and nature filled environmet together.</h3>
+    <hr class="hr-green">
+    <div class="row contact-content">
+      <div class = "col-sm-12 col-md-6 col-lg-4">
+        <div class="contact-info wow fadeInLeft">
+          <%= image_tag 'logo-white.png', alt: 'logo'%>
+          <p>We offer green and peace environment to our clients.Contact us to live as one with the nature.</p>
+        </div>
+        <hr class="wow fadeInLeft">
+        <div class="contact-details wow fadeInLeft">
+          <div class="contact-detail">
+            <i class="fa fa-phone"></i><p>+91-9487907788 <br>+91-9443486620 </p>
+          </div>
+          <div class="contact-detail">
+            <i class="fa fa-clock-o"></i><p>Mon-Sat 9:00am - 10:00pm</p>
+          </div>
+          <div class="contact-detail">
+            <i class="fa fa-map-marker"></i><p>36/1 Vetrithiru Nagar,KTC Nagar East,Tirunelveli - 627 011.<br>7-3rd,M.Block,TNHB-Royal Enclave Appartment, Nerkundrum,Ch - 600092. </p>
+          </div>
+        </div>
+      </div>
+      <div class = "col-sm-12 col-md-6 col-lg-8 contact-form">
+        <div class="col-md-12 col-lg-8 offset-lg-4">
+          <!-- IF MAIL SENT SUCCESSFULLY -->
+          <h6 class="successContent">
+            <i class="fa fa-check left" style="color: #5cb45d;"></i>Your message has been sent successfully. We will contact you soon.
+          </h6>
+          <!-- END IF MAIL SENT SUCCESSFULLY -->
+
+          <!-- MAIL SENDING UNSUCCESSFULL -->
+          <h6 class="errorContent">
+            <i class="fa fa-exclamation-circle left" style="color: #e1534f;"></i>Please resubmit again..
+          </h6>
+          <!-- MAIL SENDING UNSUCCESSFULL -->
+          <%= form_for contact, url: contact_home_index_path, remote: true, html: { 'data-behavior' => 'Contact.VeForm' } do |form| %>
+          <div class="form-field-wrapper wow fadeInRight" data-wow-duration="1s">
+            <%= form.text_field :name, placeholder: 'Name', class: 'input-sm contact-input', required: true %>
+          </div>
+          <div class="form-field-wrapper wow fadeInRight" data-wow-duration="1.2s">
+            <%= form.text_field :email, placeholder: 'Email', class: 'input-sm contact-input', required: true %>
+          </div>
+          <div class="form-field-wrapper wow fadeInRight" data-wow-duration="1.5s">
+            <%= form.text_field :subject, placeholder: 'Subject', class: 'input-sm contact-input', required: true %>
+          </div>
+          <div class="form-field-wrapper wow fadeInRight" data-wow-duration="1.8s">
+            <%= form.text_area :message, placeholder: 'Share your idea and requirement with us.', class: 'input-sm contact-input', required: true %>
+          </div>
+          <div class="form-field-wrapper wow fadeInRight" data-wow-duration="1s">
+            <%= form.submit 'Send Message', class: 'btn btn-send', data: { disable_with: 'Submitting...' } %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+
+.box {
+  background: red;
+  height: 50px;
+  border: 8px solid green;
+}
+  .errorContent {
+  display:none;
+  }
+  .successContent {
+  display:none;
+  }
+
+@media all and (max-width: 658px) {
+  .box{
+    background: blue;
+  }
+
+}

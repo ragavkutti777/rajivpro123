@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Boomerang';
+  src: font-url('Boomerang.otf');
+  src: font-url('Boomerang.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kick';
+  src: font-url('Kick.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cookie';
+  src: font-url('Cookie-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Intrique';
+  src: font-url('Intrique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playball';
+  src: font-url('Playball.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cap';
+  src: font-url('Cap.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-cap {
+  font-family: "Cap", Arial, sans-serif;
+}
+
+.font-boomerang {
+  font-family: "Boomerang", Arial, sans-serif;
+}
+
+.font-kick {
+  font-family: "Kick", Arial, sans-serif;
+}
+
+.font-intrique {
+  font-family: "Intrique", Arial, sans-serif;
+}
+
+.font-playball {
+  font-family: "Playball", Arial, sans-serif;
+}
+
+.font-cookie {
+  font-family: "Cookie", Arial, sans-serif;
+}

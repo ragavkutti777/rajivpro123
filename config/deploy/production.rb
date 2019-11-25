@@ -1,0 +1,1 @@
+server '52.14.94.186', user: 'ubuntu', roles: %w{app web}
